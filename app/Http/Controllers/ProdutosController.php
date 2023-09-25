@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Produto;
 use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
@@ -9,7 +10,9 @@ class ProdutosController extends Controller
     
     Public function index()
     {
-        return 'produtos';        
+        $findProduto = Produto::all();
+        
+        return view('pages.produtos.paginacao', compact('findProduto'));        
     }
     
 }
