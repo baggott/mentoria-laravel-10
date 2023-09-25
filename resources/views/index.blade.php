@@ -207,7 +207,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" ></script>
     <script src="{{ asset('js/dashboard.js')}}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script src="{{ asset('js/projeto.js')}}"></script>
 </body>
 </html>
