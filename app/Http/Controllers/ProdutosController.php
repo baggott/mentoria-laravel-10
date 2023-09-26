@@ -35,9 +35,13 @@ class ProdutosController extends Controller
     {
         $method = $request->method();
         if ($method == "POST"){
-            // cria
+            $data = $request->all();
+
+            //dd($request->all());
+            Produto::create($data);
+            return redirect()->route('produto.index');
         }
 
-        return view('pages.produto.create');
+        return view('pages.produtos.create');
     }
 }
