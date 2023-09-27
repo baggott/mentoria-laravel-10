@@ -23,7 +23,7 @@ class FormRequestProdutos extends FormRequest
     {
         $request =[];
         if($this->method == "POST"){
-            return [S
+            return [
                 'nome' => 'required',
                 'valor' => 'required',
             ];
