@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FormRequestProdutos;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 
@@ -31,7 +32,7 @@ class ProdutosController extends Controller
         return response()->json(['success' => true]);
     }
     
-    public function cadastrarProduto(Request $request)
+    public function cadastrarProduto(FormRequestProdutos  $request)
     {
         $method = $request->method();
         if ($method == "POST"){
